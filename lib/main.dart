@@ -1,5 +1,5 @@
 import 'package:chatapp/firebase_options.dart';
-import 'package:chatapp/screens/chatgpt.dart';
+import 'package:chatapp/screens/chat_screen.dart';
 import 'package:chatapp/screens/splash.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-      // options: DefaultFirebaseOptions.currentPlatform,
+      options: DefaultFirebaseOptions.currentPlatform,
       );
   runApp(const MyApp());
 }
